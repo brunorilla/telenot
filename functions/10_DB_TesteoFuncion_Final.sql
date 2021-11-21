@@ -5,7 +5,7 @@ FROM HISTORIALESTADO
 WHERE ID_TICKET = 6
 AND fecha_fin IS NOT NULL
 
-/*Testeo de funci�n Breach*/
+/*Testeo de función Breach*/
 
 SELECT HistorialEstado.id_ticket, Tipologia.id_Tipologia, Tipologia.SLA, Tipologia.nombre AS PRIORIDAD, HISTORIALESTADO.fecha_inicio, HISTORIALESTADO.fecha_fin, 
 dbo.CALCULAR_TIEMPO_RES(HISTORIALESTADO.fecha_fin, HISTORIALESTADO.fecha_inicio) AS CANT_DIAS, 
